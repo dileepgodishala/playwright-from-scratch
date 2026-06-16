@@ -15,10 +15,10 @@ import { defineConfig, devices, expect } from '@playwright/test';
 const config = ({
   testDir: './tests',
   
-  timeout: 40000,
+  timeout: 30000,
 
   expect: {
-    timeout: 40000,
+    timeout: 20000,
   },
 
   reporter: 'html',
