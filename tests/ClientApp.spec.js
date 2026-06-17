@@ -14,7 +14,7 @@ test('Assignment - 1', async({page}) =>
 
     await page.waitForLoadState("networkidle");
 
-    const firstItem = page.locator(".card-body b").allTextContents();
+    const firstItem = await page.locator(".card-body b").allTextContents();
     console.log(firstItem);
 
 });
